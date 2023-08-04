@@ -1,0 +1,175 @@
+html {
+    font: 1.2em/1.4 Arial, Helvetica, sans-serif;
+  }
+  
+   
+  header .title {
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
+    padding: 1em;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    border: 5px solid #000;
+  }
+  
+  body {
+    padding: 0 0 1em;
+  }
+  header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+    border-top: 1px solid #999;
+  }
+ 
+  
+  main {
+    padding: 0 1em;
+  }
+  
+  .cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards li {
+    border: 5px solid #000;
+    margin-bottom: 1em;
+  }
+  
+  .cards h2 {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0.5em 1em;
+  }
+  
+  .cards .inner {
+    padding: 0.5em 1em;
+  }
+  
+  .sidebar {
+    background-color: #333;
+    border: 5px solid #000;
+    padding: 0.5em 1em;
+    color: #fff;
+  }
+
+
+  .head{
+     
+
+    
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+    width:1000px;
+     }
+
+.cards{
+
+
+grid-column-start: 1;
+grid-column-end: 1;
+grid-row-start: 4;
+grid-row-end: 4;
+}
+
+.cards1{
+
+
+grid-column-start: 2;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 1;
+}
+
+.cards2{
+grid-column-start: 3;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 1;
+
+}
+
+.cards3{
+grid-column-start: 1;
+grid-column-end: 1;
+grid-row-start: 2;
+grid-row-end: 2;
+}
+
+.cards4{
+grid-column-start: 2;
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end: 2;
+}
+
+aside{
+grid-column-start: 4;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 6;
+}
+  
+  @media screen and (min-width: 600px) {
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    main {
+        display: flex;
+        justify-content: space-between;
+      }
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+      display: grid;
+ 
+    }
+  
+    header a {
+      border: none;
+    }
+  
+    article {
+        flex: 3;
+    
+      } 
+    nav {
+      display: flex;
+    }
+  
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+  
+    nav ul li {
+      list-style: none;
+    }
+  
+  
+    .sidebar {
+      margin: 1em;
+      flex: 1;
+    }
+  
+
+  }
